@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <nav class="flex justify-between">
-        <section class="w-1/2 mx-[50px] my-[20px] flex items-center">
+    <nav class="flex justify-between sm:flex-row flex-col">
+        <section class="sm:w-1/2 w-full sm:mx-[50px] mx-auto my-[10px] flex items-center sm:justify-start justify-center">
             <img class="w-[60px] h-[60px]" src="/assets/logo.png" alt="BD logo">
             <h1 class="emergency-service-text flex flex-col text-left mx-[10px] text-[#006747] text-[30px] font-bold leading-none"><span>Emergency</span> <span>Service</span> </h1>
         </section>
-        <section class="w-1/2 flex justify-end mx-[50px] my-[20px]">
+        <section class="sm:w-1/2 w-full flex sm:justify-end justify-center sm:mx-[50px] mx-auto my-[10px]">
             <button class="heart flex items-center justify-center bg-[#ECFFF0] gap-[10px] h-[35px] w-[100px] mx-[20px] my-[20px] rounded-[20px]">
                 <span id="heart-count" class="heart-count"></span>
                 <img class="w-[30px] h-[30px]" src="/assets/heart.png" alt="heart">
@@ -26,14 +26,14 @@
             </button>
         </section>
     </nav>
-    <header class="flex flex-col items-center justify-center w-full h-[250px] bg-gradient-to-r from-[#013324] via-[#006445] to-[#013324]">
+    <header class="flex flex-col items-center justify-center w-full sm:h-[250px] h-[320px] p-[20px] bg-gradient-to-r from-[#013324] via-[#006445] to-[#013324]">
         <img class="w-[100px] h-[100px]" src="/assets/logo.png" alt="BD logo">
-        <h1 class="text-white text-[40px] font-bold">Emergency Service Directory</h1>
+        <h1 class="text-white text-[40px] font-bold text-center">Emergency Service Directory</h1>
         <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </header>
     <main>
-        <section class="px-[20px] py-[50px] flex gap-[10px] bg-[#F5FFF6] w-full">
-            <section class="tabs w-3/4 flex flex-wrap gap-[10px] align-center justify-center">
+        <section class="px-[20px] py-[50px] flex sm:flex-row flex-col-reverse justify-center gap-[10px] bg-[#F5FFF6] w-full">
+            <section class="tabs w-1/2 md:w-3/5 lg:w-3/4 flex flex-wrap gap-[10px] align-center self-center justify-center min-w-[350px]">
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/emergency.png" alt="Service Topic Icon">
@@ -179,7 +179,7 @@
                     </div>
                 </main>
             </section>
-            <aside class="history w-1/4 flex flex-col bg-white shadow-lg rounded-[10px]">
+            <aside class="history w-1/2 md:w-2/5 lg:w-1/4 flex flex-col self-center sm:self-stretch bg-white shadow-lg rounded-[10px] min-w-[350px]">
                 <div class="flex items-center justify-between">
                     <p class="mx-[20px] text-[20px]"><i class="fa-solid fa-clock"></i> Call History</p>
                     <button id="clear-history" class="bg-[#00A63E] h-[35px] w-[100px] m-[20px] rounded-[20px] text-white">Clear</button>
