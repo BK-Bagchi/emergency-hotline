@@ -12,16 +12,14 @@ document.getElementById("heart-count").innerHTML = 0;
 document.getElementById("coin-count").innerHTML = 100;
 document.getElementById("copy-count").innerHTML = 0;
 
-const allHeart = document.getElementsByClassName("heart-icon");
-Array.from(allHeart).forEach((heart) => {
+document.querySelectorAll(".heart-icon").forEach((heart) => {
   heart.addEventListener("click", () => {
     document.getElementById("heart-count").innerHTML =
       parseInt(document.getElementById("heart-count").innerHTML) + 1;
   });
 });
 
-const allCall = document.getElementsByClassName("call-btn");
-Array.from(allCall).forEach((call, index) => {
+document.querySelectorAll(".call-btn").forEach((call, index) => {
   call.addEventListener("click", () => {
     const coinNow = document.getElementById("coin-count").innerHTML;
     if (coinNow < 20) alert("You don't have enough coins");
@@ -64,5 +62,8 @@ document.querySelectorAll(".copy-btn").forEach((button, index) => {
     navigator.clipboard.writeText(serviceContact).then(() => {
       alert(`Copied: ${serviceContact}`);
     });
+
+    document.getElementById("copy-count").innerHTML =
+      parseInt(document.getElementById("copy-count").innerHTML) + 1;
   });
 });
