@@ -56,3 +56,13 @@ Array.from(allCall).forEach((call, index) => {
 document.getElementById("clear-history").addEventListener("click", () => {
   document.getElementById("history-log").innerHTML = "";
 });
+
+document.querySelectorAll(".copy-btn").forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const serviceContact =
+      document.getElementsByClassName("service-contact")[index].innerText;
+    navigator.clipboard.writeText(serviceContact).then(() => {
+      alert(`Copied: ${serviceContact}`);
+    });
+  });
+});
