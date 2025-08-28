@@ -1,8 +1,9 @@
 const getTheTime = () => {
   const now = new Date();
-  const hours = now.getHours() - 12;
+  let hours = now.getHours();
   const minutes = now.getMinutes();
   const seconds = now.getSeconds();
+  hours > 12 ? (hours -= 12) : hours;
   const AMOrPM = now.getHours() >= 12 ? "PM" : "AM";
   const showTime = `${hours} : ${minutes} : ${seconds} ${AMOrPM}`;
   return showTime;
