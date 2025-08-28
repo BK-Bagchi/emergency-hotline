@@ -12,10 +12,12 @@ document.getElementById("heart-count").innerHTML = 0;
 document.getElementById("coin-count").innerHTML = 100;
 document.getElementById("copy-count").innerHTML = 0;
 
-document.querySelectorAll(".heart-icon").forEach((heart) => {
+document.querySelectorAll(".heart-icon").forEach((heart, index) => {
   heart.addEventListener("click", () => {
     document.getElementById("heart-count").innerHTML =
       parseInt(document.getElementById("heart-count").innerHTML) + 1;
+    document.getElementsByClassName("heart-icon-span")[index].innerHTML =
+      "&#10084;";
   });
 });
 
