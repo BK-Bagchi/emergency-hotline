@@ -14,15 +14,15 @@
         </section>
         <section class="w-1/2 flex justify-end mx-[50px] my-[20px]">
             <button class="heart flex items-center justify-center bg-[#ECFFF0] gap-[10px] h-[35px] w-[100px] mx-[20px] my-[20px] rounded-[20px]">
-                <span class="heart-count"></span>
+                <span id="heart-count" class="heart-count"></span>
                 <img class="w-[30px] h-[30px]" src="/assets/heart.png" alt="heart">
             </button>
             <button class="coin flex items-center justify-center bg-[#ECFFF0] gap-[10px] h-[35px] w-[100px] mx-[20px] my-[20px] rounded-[20px]">
-                <span class="coin-count"></span>
+                <span id="coin-count" class="coin-count"></span>
                 <img class="w-[30px] h-[30px]" src="/assets/coin.png" alt="coin">
             </button>
             <button class="copy flex items-center justify-center bg-[#00A63E] gap-[10px] h-[35px] w-[100px] mx-[20px] my-[20px] rounded-[20px] text-white">
-                <span class="copy-count"></span>Copy
+                <span id="copy-count" class="copy-count"></span>Copy
             </button>
         </section>
     </nav>
@@ -37,7 +37,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/emergency.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-black text-[25px]"><i class="fa-regular fa-heart"></i></span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-black text-[25px]"><i class="fa-regular fa-heart"></i></span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">National Emergency Number</h1>
@@ -53,7 +53,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#DFEFFF] p-[10px] rounded-[10px]" src="/assets/police.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Police Helpline Number</h1>
@@ -69,7 +69,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/fire-service.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Fire Service Number</h1>
@@ -85,7 +85,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/ambulance.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Ambulance Service Number</h1>
@@ -101,7 +101,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/emergency.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Women & Child Helpline</h1>
@@ -117,7 +117,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/emergency.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Anti-corruption Helpline</h1>
@@ -133,7 +133,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/emergency.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Electricity Helpline</h1>
@@ -149,7 +149,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/brac.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">BRAC Helpline</h1>
@@ -165,7 +165,7 @@
                 <main class="flex-1 min-w-[350px] p-[20px] bg-white shadow-lg rounded-[10px]">
                     <div class="flex items-center justify-between">
                         <img class="w-[50px] h-[50px] bg-[#FFE3E2] p-[10px] rounded-[10px]" src="/assets/Bangladesh-Railway.png" alt="Service Topic Icon">
-                        <p class="heart-icon"><span class="text-white text-[25px]">&#10084;</span></p>
+                        <p class="heart-icon cursor-pointer"><span class="text-white text-[25px]">&#10084;</span></p>
                     </div>
                     <div class="my-[20px]">
                         <h1 class="font-bold text-[20px]">Bangladesh Railway Helpline</h1>
